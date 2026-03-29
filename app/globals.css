@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --font-geist-sans: 'Inter', system-ui, sans-serif;
+    --font-geist-mono: 'JetBrains Mono', monospace;
+    scroll-behavior: smooth;
+  }
+
+  * {
+    @apply border-gray-200 dark:border-gray-800;
+  }
+
+  body {
+    @apply bg-gray-50 dark:bg-gray-950 text-gray-900 dark:text-gray-100 antialiased;
+  }
+
+  /* Custom scrollbar */
+  ::-webkit-scrollbar { width: 6px; height: 6px; }
+  ::-webkit-scrollbar-track { @apply bg-transparent; }
+  ::-webkit-scrollbar-thumb { @apply bg-gray-300 dark:bg-gray-700 rounded-full; }
+  ::-webkit-scrollbar-thumb:hover { @apply bg-gray-400 dark:bg-gray-600; }
+
+  /* MDX article typography */
+  .prose-article h1 { @apply text-3xl font-bold tracking-tight text-gray-900 dark:text-white mt-0 mb-4; }
+  .prose-article h2 { @apply text-xl font-bold text-gray-900 dark:text-white mt-10 mb-3 pb-2 border-b border-gray-100 dark:border-gray-800; }
+  .prose-article h3 { @apply text-lg font-semibold text-gray-900 dark:text-white mt-7 mb-2; }
+  .prose-article p  { @apply text-gray-600 dark:text-gray-300 leading-relaxed mb-4 text-base; }
+  .prose-article ul { @apply list-disc pl-5 space-y-2 mb-4; }
+  .prose-article ol { @apply list-decimal pl-5 space-y-2 mb-4; }
+  .prose-article li { @apply text-gray-600 dark:text-gray-300 leading-relaxed; }
+  .prose-article strong { @apply font-semibold text-gray-900 dark:text-white; }
+  .prose-article a  { @apply text-green-600 dark:text-green-400 underline underline-offset-2 hover:text-green-700; }
+  .prose-article blockquote { @apply border-l-4 border-green-500 pl-4 italic text-gray-500 dark:text-gray-400 my-4; }
+  .prose-article code { @apply text-sm bg-gray-100 dark:bg-gray-800 px-1.5 py-0.5 rounded font-mono text-gray-800 dark:text-gray-200; }
+  .prose-article pre { @apply bg-gray-900 text-gray-100 rounded-xl p-4 overflow-x-auto mb-4; }
+  .prose-article pre code { @apply bg-transparent p-0 text-gray-100; }
+  .prose-article table { @apply w-full border-collapse mb-4 text-sm; }
+  .prose-article th { @apply text-left font-semibold text-gray-900 dark:text-white border-b-2 border-gray-200 dark:border-gray-700 pb-2 pr-4; }
+  .prose-article td { @apply border-b border-gray-100 dark:border-gray-800 py-2 pr-4 text-gray-600 dark:text-gray-300; }
+  .prose-article hr { @apply border-gray-200 dark:border-gray-700 my-8; }
+}
