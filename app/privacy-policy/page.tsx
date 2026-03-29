@@ -52,7 +52,7 @@ export default function PrivacyPolicyPage() {
         </section>
 
         <section>
-          <h2 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">7. Children's Privacy</h2>
+          <h2 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">7. Children&apos;s Privacy</h2>
           <p>Our website is not directed to children under 13. We do not knowingly collect personal information from children.</p>
         </section>
 
